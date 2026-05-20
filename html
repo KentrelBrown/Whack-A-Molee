@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Whack-A-Mole</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- START SCREEN -->
+  <div class="startScreen">
+    <h1>Whack-A-Mole</h1>
+
+    <button id="start">Start Game</button>
+
+    <img
+      id="startMole"
+      src="https://static.vecteezy.com/system/resources/previews/046/498/322/original/cartoon-mole-isolated-on-transparent-background-adorable-and-detailed-forest-creature-drawing-png.png"
+    >
+
+    <img
+      id="startHammer"
+      src="https://static.vecteezy.com/system/resources/previews/047/389/395/large_2x/toy-hammer-3d-icon-transparent-background-png.png"
+    >
+  </div>
+
+  <!-- GAME UI -->
+  <div class="gameUI">
+
+    <h2>Time: <span id="timer"></span></h2>
+    <h2 id="scoreText">Score: <span id="score"></span></h2>
+
+    <h3 id="winUpdate">+100</h3>
+    <h3 id="loseUpdate">-100</h3>
+
+    <div class="game">
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+    </div>
+
+    <img
+      id="gameMole"
+      src="https://static.vecteezy.com/system/resources/previews/024/029/998/original/mole-icon-clipart-transparent-background-free-png.png"
+    >
+
+    <img
+      id="gameHammer"
+      src="https://clipart-library.com/new_gallery/14-145924_soft-hammer-mallet-rubber-mallet-png.png"
+    >
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
