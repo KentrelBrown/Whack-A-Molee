@@ -1,0 +1,130 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+}
+
+body{
+  height: 100vh;
+
+  background-image: url("https://static.vecteezy.com/system/resources/previews/008/289/688/original/seamless-texture-cartoon-grass-green-plants-pattern-for-wallpaper-illustration-backdrop-organic-background-for-the-game-gui-vector.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* START SCREEN */
+
+.startScreen{
+  width: 100%;
+  height: 100vh;
+}
+
+.startScreen h1{
+  text-align: center;
+  font-size: 90px;
+  margin-top: 40px;
+}
+
+#start{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 180px;
+  height: 90px;
+
+  background: black;
+  color: white;
+  font-size: 20px;
+}
+
+#start:hover{
+  cursor: pointer;
+}
+
+#startMole{
+  position: absolute;
+  width: 120px;
+}
+
+#startHammer{
+  position: absolute;
+  width: 120px;
+}
+
+/* GAME */
+
+.gameUI{
+  display: none;
+}
+
+.game{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+
+  justify-content: center;
+  gap: 60px;
+
+  margin-top: 100px;
+}
+
+.hole{
+  width: 120px;
+  height: 120px;
+
+  background: black;
+  border-radius: 50%;
+}
+
+#gameMole{
+  position: absolute;
+  width: 110px;
+  display: none;
+  z-index: 10;
+}
+
+#gameHammer{
+  position: absolute;
+  width: 120px;
+  z-index: 20;
+}
+
+h2{
+  display: inline-block;
+  margin: 20px;
+  font-size: 40px;
+}
+
+#scoreText{
+  margin-left: 150px;
+}
+
+#winUpdate{
+  position: absolute;
+  left: 55%;
+  top: 10%;
+
+  color: green;
+  font-size: 50px;
+
+  display: none;
+}
+
+#loseUpdate{
+  position: absolute;
+  left: 55%;
+  top: 10%;
+
+  color: red;
+  font-size: 50px;
+
+  display: none;
+}
+#startHammer,
+#gameHammer {
+  pointer-events: none;
+}
